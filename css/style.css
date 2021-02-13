@@ -72,6 +72,27 @@ img {
   overflow: hidden;
 }
 
+.button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+
 /*header*/
 
 .header {
@@ -218,20 +239,6 @@ img {
   line-height: 1.36;
   font-weight: 900;
   letter-spacing: 0.06em;
-}
-
-.hero .button {
-  padding: 10px 32px;
-  border-radius: 4px;
-  border-style: none;
-
-  color: var(--primary-background-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.875;
-  font-weight: 700;
-  cursor: pointer;
 }
 
 /* advantages */
@@ -544,6 +551,7 @@ img {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .mailing .form-input::placeholder {
@@ -553,18 +561,8 @@ img {
 
 .mailing .form-submit {
   position: relative;
-  padding: 10px 62px 10px 29px;
-  border: none;
-  border-radius: 4px;
-
-  background-color: var(--accent-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  line-height: 1.88;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  cursor: pointer;
+  padding-right: 62px;
+  text-align: right;
 }
 
 .mailing .icon {
@@ -721,7 +719,7 @@ img {
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 528px;
-  height: 581px;
+  padding: 40px;
   border-radius: 4px;
 
   background-color: #ffffff;
@@ -755,4 +753,18 @@ img {
 
 .modal-close .icon {
   fill: currentColor;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--accent-color);
+}
+
+.modal .title {
+  margin-bottom: 12px;
+
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
 }
