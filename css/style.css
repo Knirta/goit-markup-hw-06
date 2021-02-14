@@ -749,6 +749,7 @@ img {
   background-color: #ffffff;
   color: #000000;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close .icon {
@@ -796,6 +797,8 @@ img {
   border-radius: 4px;
 
   color: var(--title-text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .input-icon {
@@ -804,6 +807,7 @@ img {
   left: 12px;
   transform: translateY(-50%);
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .input:focus {
@@ -845,6 +849,9 @@ img {
   margin-right: 7px;
   border: 2px solid #000000;
   border-radius: 4px;
+  background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .checkbox-icon {
