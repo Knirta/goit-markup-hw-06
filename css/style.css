@@ -828,7 +828,7 @@ img {
   outline-color: var(--accent-color);
 }
 
-.modal .comment .modal .comment::placeholder {
+.modal .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
